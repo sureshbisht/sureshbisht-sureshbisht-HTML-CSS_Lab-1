@@ -1,0 +1,148 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    .menu-items {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #main-menu {
+
+      background-color: darkgray;
+
+    }
+
+    #main-menu>li {
+
+      display: inline-block;
+    }
+
+    #main-menu>li>a {
+
+      padding: 10px;
+      display: inline-block;
+
+      text-decoration: none;
+      color: white;
+
+    }
+
+    #main-menu>li>a:hover {
+
+      background-color: black;
+    }
+
+
+    #main-menu-item-2, #main-menu-item-3 {
+      position: relative;
+    }
+
+    #sub-menu, #sub-menu-2 {
+      position: absolute;
+
+      background-color: lightgray;
+
+      padding: 10px;
+      white-space: nowrap;
+      /* top: 50px; */
+
+      display: none;
+    }
+
+    #main-menu-item-2:hover #sub-menu, #main-menu-item-3:hover #sub-menu-2{
+      display: block;
+    }
+
+    header h1 {
+      background-color: red;
+      text-align: center;
+
+      padding: 20px;
+      margin: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Demo of Dropdown</h1>
+  </header>
+
+  <nav>
+
+    <ul id="main-menu" class="menu-items">
+      <li>
+        <a href="/link-1">
+          Link-1
+        </a>
+      </li>
+
+       <li id="main-menu-item-2">
+        <a href="/link-2">
+          Link-2
+        </a>
+
+        <ul id="sub-menu" class="menu-items">
+          <li>
+            <a href="/dd-link-1">
+              DD-Link-1
+            </a>
+          </li>
+
+          <li>
+            <a href="/dd-link-2">
+              DD-Link-2
+            </a>
+          </li>
+
+          <li>
+            <a href="/dd-link-3">
+              DD-Link-3
+            </a>
+          </li>
+        </ul>
+
+      </li>
+
+      <li id="main-menu-item-3">
+        <a href="/link-3">
+          Link-3
+        </a>
+
+        <ul id="sub-menu-2" class="menu-items">
+          <li>
+            <a href="/dd-link-4">
+              DD-Link-4
+            </a>
+          </li>
+
+          <li>
+            <a href="/dd-link-5">
+              DD-Link-5
+            </a>
+          </li>
+
+          <li>
+            <a href="/dd-link-6">
+              DD-Link-6
+            </a>
+          </li>
+        </ul>
+
+      </li>
+    </ul> 
+  </nav>
+
+</body>
+
+</html>
